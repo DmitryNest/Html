@@ -1,0 +1,29 @@
+$(document).ready(function () {
+
+    var headerButton = document.getElementById("header-button");
+    var yourName = document.getElementsByClassName("your-name")[0];
+
+    headerButton.onclick = function() {
+
+
+
+
+        var name = prompt('В каком году появилась спецификация ECMA-262 5.1?', '');
+
+
+        if (name < 2011) {
+            alert( 'Это слишком рано..' );
+        } else if (name > 2011) {
+            alert( 'Это поздновато..' );
+        } else {
+            alert( 'Да, точно в этом году!' );
+
+        }
+
+        // console.log(name);
+        //yourName.innerHTML = name;
+
+
+    }
+
+})
